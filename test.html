@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <style>
+        /* Reset default margins and ensure full height */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Typical mobile width */
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .iframe-wrapper {
+            position: relative;
+            width: 100%;
+            height: 500px; /* Adjust this height as needed */
+            background-color: #fff;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* Ensure responsiveness */
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+                padding: 0 5px;
+            }
+
+            .iframe-wrapper {
+                height: 450px; /* Slightly smaller on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Book Your Tickets</h2>
+        </div>
+        <div class="iframe-wrapper">
+            <iframe 
+                src="https://booking.mammamiatheparty.co.uk/" 
+                title="Ticket Booking"
+            ></iframe>
+        </div>
+    </div>
+</body>
+</html>
